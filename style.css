@@ -1,6 +1,7 @@
 
 body {
   font-family: 'Piazzolla', serif;
+  margin: 0px; 
 }
 nav   {
   display: flex;
@@ -48,6 +49,7 @@ a:hover {
 .photo-box {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 main {
