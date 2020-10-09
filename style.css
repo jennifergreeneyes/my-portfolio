@@ -66,11 +66,23 @@ main {
 
 }
 
-.email-button {
-  border-radius: 8px;
-  transition-duration: 0.4s;
+footer {
+
+background-color: #85baa1;
+padding: 20px;
+border: 10px solid #16232C;
+display: flex;
+justify-content: center;
 }
-.email-button:hover {
-  background-color: #e2cfea;
-  color: black;
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 10px;
 }
+
