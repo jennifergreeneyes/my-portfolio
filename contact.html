@@ -20,26 +20,29 @@
     </header>
     <main>
         <div class=form-box>
-        <form action="/My Contact Form" method="post">
-            <h1>Get in Touch</h1>
+        <form name ="contactForm" action="/My Contact Form" on submit="return validateForm()" method="post">
+            <h1>I'd love to hear from you</h1>
+            <h2>Please leave me a message...</h2>
             <ul>
                 <li>
-                    <label for="Name">Name: </label>
+                    <label for="Name">Name: <abbr title="required">*</abbr></label>
                     <input type="text" id="name" name="fullname">
                 </li>
                 <li>
-                    <label for="email">Email: </label>
+                    <label for="email">Email: <abbr title="required">*</abbr></label>
                     <input type="email" id="email" name="email">
                 </li>
                 <li>
-                    <label for="message">Message: </label>
+                    <label for="message">Message: <abbr title="required">*</abbr></label>
                     <textarea id="message" name="sendmsg"></textarea>
                 </li>
             </ul>
         </form>
         </div>
-        <button type="submit">Submit</button>
-        <button type="submit">Clear</button>
+        <div class=buttons>
+        <button id="submit-button" type="submit">Submit</button><br>
+        <button id="clear-button" type="submit">Clear</button>
+        </div>
     </main>
     
     <footer>
@@ -52,4 +55,8 @@
             </div><!--end of social media-->
      </footer>   
 </body>
+<script>
+    document.getElementById("submit-button").onclick = function() {var name=document.getElementbyId("name");alert("Please send an email instead!");}
+   
+</script>
 </html>
