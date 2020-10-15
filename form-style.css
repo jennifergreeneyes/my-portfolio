@@ -46,23 +46,52 @@ body {
     color: black;
     background-color: #6e8894;
   }
-
+  a:visited{
+      color:black;
+  }
   main {
 
     background-color: #85baa1;
-    flex-direction: column;
     display: flex;
-    align-content: space-around;
+    flex-direction: column;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 30px;
-    align-content: space-around;
     border: 10px solid #062726;
-  
   }
 
+  ul{
+    list-style: none;
+    padding; 0;
+    margin: 0;
+  }
+  
+  label {
+    width: 90px;
+    text-align: right;
+  }
 
-  footer {
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  button {
+    background-color: #85baa1; 
+    text-align: center;
+    padding: 5px;
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  button:hover{
+    color: black;
+    background-color: #6e8894;
+
+  }
+
+   footer {
 
     background-color: #85baa1;
     padding: 20px;
