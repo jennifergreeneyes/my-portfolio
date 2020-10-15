@@ -19,29 +19,29 @@
         </nav>
     </header>
     <main>
-        <div class=form-box>
+        <div class="form-box">
         <form name ="contactForm" action="/My Contact Form" on submit="return validateForm()" method="post">
             <h1>I'd love to hear from you</h1>
             <h2>Please leave me a message...</h2>
-            <ul>
-                <li>
+            
+                <div class="form-row">
                     <label for="Name">Name: <abbr title="required">*</abbr></label>
-                    <input type="text" id="name" name="fullname">
-                </li>
-                <li>
+                    <input class="form-input" type="text" id="name" name="fullname">
+                </div>
+                <div class="form-row">
                     <label for="email">Email: <abbr title="required">*</abbr></label>
-                    <input type="email" id="email" name="email">
-                </li>
-                <li>
+                    <input class="form-input" type="email" id="email" name="email">
+                </div>
+                <div class="form-row">
                     <label for="message">Message: <abbr title="required">*</abbr></label>
-                    <textarea id="message" name="sendmsg"></textarea>
-                </li>
-            </ul>
+                    <textarea class="form-input" id="message" name="sendmsg"></textarea>
+                </div>
+            
         </form>
         </div>
-        <div class=buttons>
+        <div class="buttons">
         <button id="submit-button" type="submit">Submit</button><br>
-        <button id="clear-button" type="submit">Clear</button>
+        <button id="clear-button" input type="reset">Clear</button>
         </div>
     </main>
     
@@ -56,7 +56,13 @@
      </footer>   
 </body>
 <script>
-    document.getElementById("submit-button").onclick = function() {var name=document.getElementbyId("name");alert("Please send an email instead!");}
-   
+   /* document.getElementById("submit-button").onclick = function() {var name=document.getElementbyId("name");alert("Please send an email instead!");} */
+   function SubmitBtn () {
+       var name=document.getElementById("name").value; 
+       var email=document.getElementById("email").value;
+       var message=document.getElementById("message").value;
+       alert (name+" "+email+" "+message)
+   }
+   document.getElementById("submit-button").addEventListener("click", SubmitBtn)
 </script>
 </html>
