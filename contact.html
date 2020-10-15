@@ -41,7 +41,7 @@
         </div>
         <div class="buttons">
         <button id="submit-button" type="submit">Submit</button><br>
-        <button id="clear-button" input type="reset">Clear</button>
+        <button id="clear-button" type="reset">Clear</button>
         </div>
     </main>
     
@@ -56,13 +56,20 @@
      </footer>   
 </body>
 <script>
-   /* document.getElementById("submit-button").onclick = function() {var name=document.getElementbyId("name");alert("Please send an email instead!");} */
-   function SubmitBtn () {
+      function SubmitBtn () {
        var name=document.getElementById("name").value; 
        var email=document.getElementById("email").value;
        var message=document.getElementById("message").value;
        alert (name+" "+email+" "+message)
    }
    document.getElementById("submit-button").addEventListener("click", SubmitBtn)
+
+    function ClearBtn () {
+            var name=document.getElementById("name").value = ""; 
+            var email=document.getElementById("email").value = "";
+            var message=document.getElementById("message").value = "";
+        }
+    document.getElementById("clear-button").addEventListener("click", ClearBtn)
+   
 </script>
 </html>
