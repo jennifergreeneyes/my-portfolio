@@ -2,6 +2,7 @@
 body {
     font-family: 'Piazzolla', serif;
     margin: 0px; 
+    background-color: #85baa1
   }
   nav   {
     display: flex;
@@ -96,13 +97,16 @@ body {
 
   }
 
-   footer {
+  footer {
 
     background-color: #85baa1;
     padding: 20px;
     border: 10px solid #16232C;
     display: flex;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 60px);
     }
     
     .fa {
@@ -114,4 +118,5 @@ body {
       border: 3px solid black;
       border-radius: 10px;
       margin: 10px;
+      color: black;
     }
