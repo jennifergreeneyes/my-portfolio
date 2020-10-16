@@ -66,6 +66,7 @@ main {
 
 }
 
+
 footer {
 
 background-color: #85baa1;
@@ -84,5 +85,7 @@ justify-content: center;
   border: 3px solid black;
   border-radius: 10px;
   margin: 10px;
+  color: black;
 }
+
 
